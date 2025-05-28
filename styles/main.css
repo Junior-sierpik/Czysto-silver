@@ -1,100 +1,194 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.bar-container{
+  margin-top: 10vh;
+  padding: 2rem;
+  background-color: rgba(119, 166, 210, 1);
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: end;
 }
 
-a:focus, button:focus, .navbar:focus {
-  outline: none;
+.bar-container > a {
+  margin-right: 13vw;
+  font-size: 2.25rem;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 1px;
+  background-color: rgba(119, 166, 210, 1);
 }
 
-.name {
-  font-family: "Italiana", sans-serif;
+.bar-container > a:hover {
+  color: blue;
+  transition: 0.5s ease-in-out;
 }
 
-.navbar {
+.photo-container{
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  background-color: rgba(217, 217, 217, 1);
-  padding: 0.5rem;
-  color: black;
-  box-shadow: 0 4px 2px -1px gray;
 }
-.logo-container {
+
+.photo-one {
+  position: absolute;
+  top: 9rem;
+  border-radius: 30px;
+  margin-left: 3em;
+  width: 53vw;
+  height: 65vh;
+  background-color: blue;
+  background-image: url(/assets/Photos/Kuchnia\ dwa.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.photo-two {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  right: 0;
+  margin-top: 8rem;
+  margin-right: 3em;
+  width: 45vw;
+  height: 50vh;
+  z-index: 1;
+}
+
+.photo-two::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 30px;
+  background-image: url(/assets/Photos/Salon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.text-container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
-  font-size: 1.25rem;
+  justify-content: space-around;
+  color: black;
 }
-.logo {
-  margin: 0;
-  padding: 0;
-}
-
-.social-media > img{
-  width: 40px;
+.text-container > h1, h2, h3 {
+  font-family: "Mohave", sans-serif;
 }
 
-.social-media > img:hover{
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 10rem;
+  margin-bottom: 3rem;
+}
+
+#call-button, #order-button {
+  width: 9vw;
+  height: 6vh;
+  border-radius: 30px;
+  font-size: 1em;
+  cursor: pointer;
+  border: 1px solid black;
+  box-shadow: 4px 4px 4px black;
+}
+
+#call-button {
+  background-color: rgba(133, 136, 140, 1);
+}
+#order-button {
+  background-color: rgba(26, 126, 240, 1);
+}
+#order-button:hover, #call-button:hover {
   transition: 0.5s;
-  width: 50px;
+  background-color: rgba(119, 166, 210, 1);
 }
 
-.nav-menu {
-  margin-right: 1.5rem;
-  font-size: 1.25rem;
-  list-style: none;
-  display: flex;
-  gap: 3rem;
-  cursor: pointer;
-}
-.nav-menu a {
-  color: black;
-  text-decoration: none;
+#order-button:active, #call-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #2980b9;
 }
 
-.nav-item {
-  transition: 0.7s ease;
-  font-family: "Italiana", sans-serif;
+#header {
+  font-size: 50px;
 }
-
-.nav-item:hover {
-  color: dodgerblue;
-  font-size: 1.5rem;
+#middle {
+  font-size: 25px;
 }
-
-.hamburger {
-  display: none;
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  padding: .5rem 1.5rem;
-  cursor: pointer;
+#footer {
+  font-size: 24px;
 }
 
 @media (max-width: 768px) {
-  .nav-menu {
-    position: absolute;
+  .bar-container {
+    margin-top: 5vh;
+    height: 10vh;
+    display: flex;
     align-items: center;
-    padding: 1.5rem;
-    top: 80px;
-    right: 0;
-    background-color: rgba(217, 217, 217, 1);
-    flex-direction: column;
-    width: 200px;
-    border: 1px solid black;
-    box-shadow: 0 4px 3px -1px gray;
+  }
+  .bar-container > a {
+    margin-inline: auto;
   }
 
-  .hidden {
+  .photo-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .photo-one {
+    width: 75vw;
+    position: static;
+    margin-inline: auto;
+    margin-top: 3vh;
+  }
+
+  .photo-two::before{
     display: none;
   }
 
-  .hamburger {
-    display: block;
-    margin-right: 2rem;
+  .photo-two{
+    position: relative;
+    width: 75vw;
+    height: 70vh;
+    border-radius: 30px;
+    margin-inline: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    background-image: url(/assets/Photos/Salon.jpg);
+    background-size: cover;
+    background-position: center;
   }
+
+  .text-container {
+    height: 4em;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+  }
+  #order-button, #call-button {
+    width: 45vw;
+    font-size: 2rem;
+  }
+
+  #header, #middle, #footer {
+    text-align: center;
+    font-size: 1rem;
+    margin-inline: 1em;
+  }
+  
 }
