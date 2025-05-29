@@ -1,10 +1,10 @@
     window.onload = function() {
       const goals = [
-        "Świadczenie usług na najwyższym poziomie – dbamy o każdy detal, aby nasi klienci czuli się komfortowo w perfekcyjnie czystym otoczeniu.",
-        "To jest drugi tekst.",
-        "To jest trzeci tekst.",
-        "To jest czwarty tekst.",
-        "To jest piąty tekst."
+        "Świadczenie usług na najwyższym poziomie - Dbamy o każdy detal, aby nasi klienci czuli się komfortowo w perfekcyjnie czystym otoczeniu.",
+        "Zapewnienie nieskazitelnej czystości w domach i firmach naszych klientów - Naszym priorytetem jest dokładność i dbałość o każdy szczegół.",
+        "Budowanie długofalowych relacji z klientami opartych na zaufaniu i niezawodności - Chcemy być Twoim stałym partnerem w utrzymaniu porządku.",
+        "Zwiększanie komfortu życia i pracy naszych klientów - Czysta przestrzeń to lepsze samopoczucie, efektywność i spokój.",
+        "Wyróżnianie się profesjonalizmem i wysokimi standardami obsługi - Każde zlecenie traktujemy z pełnym zaangażowaniem."
       ];
 
       let indeks = 0;

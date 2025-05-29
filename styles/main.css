@@ -1,5 +1,6 @@
 * {
   font-family: "Mohave", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .bar-container, .bar-container-2{
@@ -132,6 +133,7 @@
   cursor: pointer;
   border: 1px solid black;
   box-shadow: 4px 4px 4px black;
+  font-size: 1.5rem
 }
 
 #call-button {
@@ -506,9 +508,10 @@ input:focus {
     width: 90%;
     height: 100%;
     align-items: center;
-    gap: 1em;
+    gap: 0.5em;
     text-align: center;
     text-wrap: wrap;
+    font-size: 1rem;
   }
   .author {
     opacity: 0.2;
