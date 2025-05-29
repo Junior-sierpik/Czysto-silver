@@ -94,6 +94,11 @@ a:focus, button:focus, .navbar:focus {
     border-radius: 10px;
   }
 
+  .nav-item{
+    border-bottom: 1px solid black;
+    border-
+  }
+
   .hidden {
     display: none;
   }

@@ -1,4 +1,4 @@
-.bar-container{
+.bar-container, .bar-container-2{
   margin-top: 10vh;
   padding: 2rem;
   background-color: rgba(119, 166, 210, 1);
@@ -6,6 +6,10 @@
   border-top: 1px solid black;
   display: flex;
   justify-content: end;
+}
+.attitude-container {
+  margin-top: 60vh;
+  justify-content: flex-start;
 }
 
 .bar-container > a {
@@ -15,6 +19,13 @@
   color: black;
   letter-spacing: 1px;
   background-color: rgba(119, 166, 210, 1);
+}
+
+.attitude-bar{
+  margin-left: 17vw;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Mohave" sans-serif;
 }
 
 .bar-container > a:hover {
@@ -32,13 +43,12 @@
   top: 9rem;
   border-radius: 30px;
   margin-left: 3em;
-  width: 53vw;
-  height: 65vh;
-  background-color: blue;
-  background-image: url(/assets/Photos/Kuchnia\ dwa.jpg);
+  width: 50vw;
+  height: 66vh;
+  background-image: url(/assets/Photos/kuchnia_cala.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 }
 
 .photo-two {
@@ -82,8 +92,8 @@
 
 .button-container {
   display: flex;
-  justify-content: space-between;
-  margin-inline: 10rem;
+  justify-content: center;
+  gap: 3rem;
   margin-bottom: 3rem;
 }
 
@@ -91,7 +101,7 @@
   width: 9vw;
   height: 6vh;
   border-radius: 30px;
-  font-size: 1em;
+  font-size: 1em;ó
   cursor: pointer;
   border: 1px solid black;
   box-shadow: 4px 4px 4px black;
@@ -123,6 +133,108 @@
   font-size: 24px;
 }
 
+#header, #middle, #footer {
+  text-align: center;
+}
+
+.photos-container{
+  width: 100%;
+  height: 100vh;
+  margin-top: 2vh;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid black;
+}
+
+.left-side{
+  background-image: url(/assets/Photos/Stół1.jpg);
+}
+
+.right-side{
+  border-left: 2px solid black;
+  background-image: url(/assets/Photos/Salon2.jpg);
+}
+
+.right-side, .left-side {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 13rem;
+}
+
+.content-box {
+  width: 15vw;
+  height: 25vh;
+  background-color: rgba(26, 126, 240, 1);
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: 4px 4px 4px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-wrap: wrap;
+  gap: 0.5em;
+  font-family: "Mohave", sans-serif;
+  font-size: 1.2rem;
+}
+
+.content-box p {
+  width: 75%;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  /* padding-bottom: 2rem; */
+  /* border-bottom: 1px solid black; */
+}
+.description {
+  border-top: 1px solid black;
+}
+
+#content_1, #content_3 {
+  margin-right: 15rem;
+}
+#content_2, #content_4 {
+  margin-left: 15rem;
+}
+
+.goal-bar {
+  width: 100%;
+  height: 20vh;
+  background-image: url(/assets/Photos/Jadalnia.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.goal-container{
+  width: 50vw;
+  height: 12vh;
+  border-radius: 25px;
+  border: 1px solid black;
+  background-color: rgba(217, 217, 217, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.goal {
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out;
+}
+
 @media (max-width: 768px) {
   .bar-container {
     margin-top: 5vh;
@@ -143,9 +255,12 @@
 
   .photo-one {
     width: 75vw;
+    height: 70vh;
     position: static;
     margin-inline: auto;
     margin-top: 3vh;
+    background-size: cover;
+    background-position: center;
   }
 
   .photo-two::before{
@@ -190,5 +305,46 @@
     font-size: 1rem;
     margin-inline: 1em;
   }
+
+  .attitude-container {
+    margin-top: 1vh;
+  }
+
+  .photos-container{
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+  }
+  .left-side, .right-side {
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .content-box {
+    width: 35vw;
+    height: 25vh;
+    background-color: rgba(26, 126, 240, 1);
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 4px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-wrap: wrap;
+    gap: 0;
+    font-family: "Mohave", sans-serif;
+    font-size: 1rem;
+  }
+  #content_1, #content_3 {
+    margin-top: 4em;
+  }
+  #content_2, #content_4 {
+    margin-bottom: 4em;
+  }
+
   
 }
