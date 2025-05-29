@@ -41,9 +41,9 @@
       <a href="tel:+48222333111">+48 222 333 111</a>
     </div>
     <div class="photo-container">
-      <div class="photo-one">
+      <div class="photo-one slide-in" data-direction="left">
       </div>
-      <div class="photo-two">
+      <div class="photo-two slide-in" data-direction="right">
         <div class="text-container">
           <h1 id="header">Twoja przestrzeń, nasza perfekcja</h1>
           <h2 id="middle">Profesjonalne sprzątanie, które sprosta najwyższym standardom</h2>
@@ -63,21 +63,21 @@
         <p class="attitude-bar">To nasze atuty</p>
         <div class="photos-container">
           <div class="left-side">
-            <div id="content_1" class="content-box">
+            <div id="content_1" class="content-box slide-in" data-direction="left">
               <p class="title">Perfekcyjna czystość</p>
               <p class="description">Dbamy o każdy detal, aby Twoje mieszkanie lśniło jak nowe.</p>
             </div>
-            <div id="content_2" class="content-box">
+            <div id="content_2" class="content-box slide-in" data-direction="left">
               <p class="title">Ekologiczne środki</p>
               <p class="description">Używamy bezpiecznych, przyjaznych dla środkowiska detergentów.</p>
             </div>
           </div>
           <div class="right-side">
-            <div id="content_3" class="content-box">
+            <div id="content_3" class="content-box slide-in" data-direction="right">
                 <p class="title">Nowoczesne technologie</p>
                 <p class="description">Korzystamy z profesjonalnego sprzętu, który zapewnia najlepsze efekty.</p>
             </div>
-            <div id="content_4" class="content-box">
+            <div id="content_4" class="content-box slide-in" data-direction="right">
               <p class="title">Elastyczność i wygoda</p>
               <p class="description">Dopasowujemy terminy do Twoich potrzeb, aby maksymalnie ułatwić Ci życie.</p>
             </div>
@@ -89,8 +89,44 @@
           <p id="goal_" class="goal"></p>
         </div>
       </div>
+      <div class="form-container">
+        <div class="form-info">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Imię" required>
+            <input type="text" name="surname" placeholder="Nazwisko" required>
+            <input type="tel" name="telefon" placeholder="Telefon" required>
+            <input type="text" name="city" placeholder="Miasto" required>
+          </div>
+          <div class="form-group_checkbox">
+            <textarea id="texta" name="message" placeholder="Wiadomość"></textarea>
+          </div>
+        </div>
+        <div class="submit-container">
+          <div class="rodo">
+            <input type="checkbox" required>
+            <span class="custom-checkbox"></span>
+            <span>Administratorem Twoich danych osobowych jest Silver Apartment. Podanie danych jest dobrowolne, ale niezbędne do odpowiedzi na powyższe zgłoszenie. Osobie, której dane dotyczą, przysługuje prawo dostępu do treści swoich danych oraz ich poprawiania. Informujemy również o prawie bycia zapomnianym poprzez wystąpienie z wnioskiem do administratora o usunięcie danych osobowych.</span>
+          </div>
+          <div class="submit">
+            <button type="submit">Zamów</button>
+          </div>
+        </div>
+      </div>
   </main>
+  <footer>
+    <div class="footer-container">
+      <div class="company-info">
+        <p>ul. Junony 33D/12 80-299 Gdańsk</p>
+        <a href="mailto:czysto-silver@biuro.com">czysto-silver@biuro.com</a>
+        <a href="tel:+48111222333">+48 111 222 333</a>
+      </div>
+      <div class="author">
+        <p>Designed by: Junior</p>
+      </div>
+    </div>
+  </footer>
 <script src="navbar.js"></script>
 <script src="goal.js"></script>
+<script src="slide.js"></script>
 </body>
 </html>

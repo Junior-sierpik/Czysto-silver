@@ -1,3 +1,7 @@
+* {
+  font-family: "Mohave", sans-serif;
+}
+
 .bar-container, .bar-container-2{
   margin-top: 10vh;
   padding: 2rem;
@@ -49,6 +53,27 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-shadow: 4px 4px 4px black;
+  opacity: 0;
+  transition: all 1s ease-out;
+}
+
+.slide-in {
+  opacity: 0;
+  transition: all 1s ease-out;
+}
+
+.slide-in[data-direction="left"] {
+  transform: translateX(-150px);
+}
+
+.slide-in[data-direction="right"] {
+  transform: translateX(150px);
+}
+
+.slide-in.visible {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .photo-two {
@@ -62,6 +87,8 @@
   width: 45vw;
   height: 50vh;
   z-index: 1;
+  border-radius: 30px;
+  box-shadow: 4px 4px 4px black;
 }
 
 .photo-two::before {
@@ -97,7 +124,7 @@
   margin-bottom: 3rem;
 }
 
-#call-button, #order-button {
+#call-button, #order-button, .submit button {
   width: 9vw;
   height: 6vh;
   border-radius: 30px;
@@ -190,11 +217,6 @@
   margin: 0;
   padding: 0;
 }
-
-.title {
-  /* padding-bottom: 2rem; */
-  /* border-bottom: 1px solid black; */
-}
 .description {
   border-top: 1px solid black;
 }
@@ -228,11 +250,124 @@
   align-items: center;
   text-align: center;
   font-size: 1.3rem;
+  box-shadow: 4px 4px 4px black;
 }
 
 .goal {
   opacity: 1;
   transition: opacity 0.8s ease-in-out;
+}
+
+.form-container {
+  padding: 4vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.form-info {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 10vw;
+  margin-bottom: 2vh;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.form-group input {
+  width: 30vw;
+  height: 5vh;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid black;
+  font-size: 1.5rem;
+}
+input:focus {
+  outline: none;
+}
+
+#texta { 
+  resize: none;
+  height: 25vh;
+  width: 40vw;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+#texta:focus {
+  outline: none;
+}
+
+.submit-container{
+  margin-top: 3vh;
+  width: 92%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.rodo {
+  width: 70%;
+}
+
+.rodo input[type="checkbox"] {
+  width: 2.5vw;
+  height: 2.5vh;
+  cursor: pointer;
+}
+
+.submit button {
+  width: 12vw;
+  height: 8vh;
+  border: 1px solid black;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  background-color: rgba(183, 181, 185, 1);
+  transition: 0.7s ease;
+  cursor: pointer;
+}
+.submit button:hover {
+  background-color: rgba(119, 166, 210, 1);
+}
+.submit button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #2980b9;
+}
+
+.footer-container {
+  height: 12vh;
+  background-image: url(/assets/Photos/Tło2.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.75rem;
+}
+
+.company-info {
+  display: flex;
+  gap: 5rem;
+}
+
+.company-info a {
+  text-decoration: none;
+  color: black;
+}
+
+.author {
+  font-size: 1rem;
+  opacity: 0.5;
 }
 
 @media (max-width: 768px) {
@@ -251,6 +386,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .nav-menu {
+    z-index: 10;
   }
 
   .photo-one {
@@ -345,6 +484,33 @@
   #content_2, #content_4 {
     margin-bottom: 4em;
   }
+  .goal-bar {
+    margin-top: 85vh;
+  }
 
-  
+  .goal-container {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .submit button {
+    width: 20vw;
+  }
+
+  .footer-container{
+    font-size: 0.75rem;
+  }
+
+  .company-info {
+    margin-left: 1em;
+    width: 90%;
+    height: 100%;
+    align-items: center;
+    gap: 1em;
+    text-align: center;
+    text-wrap: wrap;
+  }
+  .author {
+    opacity: 0.2;
+  }
 }
