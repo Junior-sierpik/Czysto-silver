@@ -1,0 +1,91 @@
+* {
+  font-family: "Mohave", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.contact-container {
+  width: 100%;
+  height: 92.5vh;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(/assets/Photos/Praca.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  z-index: -1;
+}
+.links {
+  width: 90%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.social {
+  width: 24vw;
+  height: 11vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(217, 217, 217, 1);
+  font-size: 2rem;
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 30px;
+  color: black;
+  box-shadow: 4px 4px 4px black;
+  transition: 0.1s ease;
+  font-family: "Mohave", sans-serif;
+}
+
+.social:hover {
+  background-color: rgba(119, 166, 210, 1);
+  box-shadow: 0px 0px 20px rgba(26, 126, 240, 1);
+  cursor: pointer;
+}
+
+.social:active {
+  transform: translateY(3px);
+  box-shadow: 0px 0px 0px;
+}
+.social img {
+  width: 6rem;
+}
+.social p{
+  margin-right: 1.5rem;
+}
+
+.info-container {
+  border: 2px solid black;
+  width: 85%;
+  height: 60%;
+  margin-top: 4vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.info {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
