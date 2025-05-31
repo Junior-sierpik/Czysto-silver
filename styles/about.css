@@ -1,0 +1,171 @@
+* {
+  font-family: "Mohave", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.about {
+  width: 100%;
+  height: 92vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(/assets/Photos/Salon3.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.photo-container {
+  width: 30vw;
+  height: 65vh;
+  border-radius: 25px;
+  box-shadow: 4px 4px 4px black;
+  background-image: url(/assets/Photos/Łazienka.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.info-about {
+  width: 35vw;
+  height: 65vh;
+  border: 2px solid black;
+  border-radius: 25px;
+  border-left: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  text-wrap: wrap;
+}
+
+.info-container p {
+  font-size: 1.5rem;
+  font-family: "Mohave", sans-serif;
+}
+
+.opinion-container {
+  width: 100%;
+  height: 95vh;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20rem;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.slide-in {
+  opacity: 0;
+  transition: all 1s ease-out;
+}
+
+.slide-in[data-direction="left"] {
+  transform: translateX(-150px);
+}
+
+.slide-in[data-direction="right"] {
+  transform: translateX(150px);
+}
+
+.slide-in.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.opinion-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(/assets/Photos/Sypialnia.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.review {
+  width: 45vw;
+}
+
+.button {
+  width: 18vw;
+  height: 10vh;
+  font-size: 2rem;
+  border-radius: 25px;
+  border: 1px solid black;
+  box-shadow: 4px 4px 4px black;
+  cursor: pointer;
+  background-color: rgba(26, 126, 240, 1);
+  transition: 0.3s ease-out;
+}
+
+.button:hover {
+  background-color: rgba(119, 166, 210, 1);
+  box-shadow: 0px 0px 20px rgba(26, 126, 240, 1);
+  cursor: pointer;
+}
+
+.button:active {
+  transform: translateY(3px);
+  box-shadow: 0px 0px 0px;
+}
+
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    height: 88vh;
+  }
+  .about {
+    margin-top: 1rem;
+    height: 50%;
+  }
+  .info-about {
+    width: 95%;
+  }
+  .info-container p {
+    font-size: 1rem;
+  }
+  .photo-container {
+      margin-top: 1rem;
+      width: 90%;
+  }
+  
+  .opinion-container{
+    flex-direction: column;
+    justify-content: end;
+    position: relative;
+    height: 150vh;
+  }
+  .review {
+    position: absolute;
+    top: 1vh;
+    margin-bottom: 20vh;
+    width: 95%;
+    height: 15vh;
+  }
+  .review-button {
+    margin-bottom: 4vh;
+  }
+  .button {
+    width: 45vw;
+  }
+}

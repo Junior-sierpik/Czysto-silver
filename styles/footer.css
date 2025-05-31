@@ -1,0 +1,45 @@
+.footer-container {
+  height: 12vh;
+  background-image: url(/assets/Photos/Tło2.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.75rem;
+}
+
+.company-info {
+  display: flex;
+  gap: 5rem;
+}
+
+.company-info a {
+  text-decoration: none;
+  color: black;
+}
+
+.author {
+  font-size: 1rem;
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .footer-container{
+    font-size: 0.75rem;
+  }
+
+  .company-info {
+    margin-left: 1em;
+    width: 90%;
+    height: 100%;
+    align-items: center;
+    gap: 0.5em;
+    text-align: center;
+    text-wrap: wrap;
+    font-size: 1rem;
+  }
+  .author {
+    opacity: 0.2;
+  }
+}

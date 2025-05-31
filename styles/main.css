@@ -133,7 +133,8 @@
   cursor: pointer;
   border: 1px solid black;
   box-shadow: 4px 4px 4px black;
-  font-size: 1.5rem
+  font-size: 1.5rem;
+  transition: 0.5s;
 }
 
 #call-button {
@@ -143,13 +144,14 @@
   background-color: rgba(26, 126, 240, 1);
 }
 #order-button:hover, #call-button:hover {
-  transition: 0.5s;
   background-color: rgba(119, 166, 210, 1);
+  box-shadow: 0px 0px 20px rgba(26, 126, 240, 1);
+  cursor: pointer;
 }
 
 #order-button:active, #call-button:active {
-  transform: translateY(2px);
-  box-shadow: 0 2px 0 #2980b9;
+  transform: translateY(3px);
+  box-shadow: 0px 0px 0px;
 }
 
 #header {
@@ -340,36 +342,11 @@ input:focus {
 }
 .submit button:hover {
   background-color: rgba(119, 166, 210, 1);
+  box-shadow: 0px 0px 20px rgba(26, 126, 240, 1);
 }
 .submit button:active {
-  transform: translateY(2px);
-  box-shadow: 0 2px 0 #2980b9;
-}
-
-.footer-container {
-  height: 12vh;
-  background-image: url(/assets/Photos/Tło2.jpg);
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-size: 1.75rem;
-}
-
-.company-info {
-  display: flex;
-  gap: 5rem;
-}
-
-.company-info a {
-  text-decoration: none;
-  color: black;
-}
-
-.author {
-  font-size: 1rem;
-  opacity: 0.5;
+  transform: translateY(3px);
+  box-shadow: 0px 0px 0px;
 }
 
 @media (max-width: 768px) {
@@ -497,23 +474,5 @@ input:focus {
 
   .submit button {
     width: 20vw;
-  }
-
-  .footer-container{
-    font-size: 0.75rem;
-  }
-
-  .company-info {
-    margin-left: 1em;
-    width: 90%;
-    height: 100%;
-    align-items: center;
-    gap: 0.5em;
-    text-align: center;
-    text-wrap: wrap;
-    font-size: 1rem;
-  }
-  .author {
-    opacity: 0.2;
   }
 }
