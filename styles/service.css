@@ -1,0 +1,141 @@
+* {
+  font-family: "Mohave", sans-serif;
+  scroll-behavior: smooth;
+}
+
+main {
+  display: flex;
+  position: relative;
+}
+.service-menu {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 10vw;
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 4px 0px 5px rgba(0, 0, 0, 1);
+}
+.service-menu a {
+  width: 90%;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  transition: 0.2s ease;
+}
+.service-menu a:hover {
+  transform: scale(1.2);
+  color: blue;
+}
+
+.service-menu::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: url(/assets/Photos/Tło1.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+.services {
+  width: 100%;
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+}
+.service {
+  position: relative;
+  width: 90vw;
+  height: 40vh;
+  font-size: 2.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.service::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  z-index: -1;
+}
+.service p {
+  margin-left: 1rem;
+}
+.service ul {
+  margin-left: 4rem;
+}
+#home::before {
+  background-image: url(/assets/Photos/Sypialnia.jpg);
+}
+#office::before {
+  background-image: url(/assets/Photos/Dywan.jpg);
+  background-position: top;
+}
+#factory::before {
+  background-image: url(/assets/Photos/produkcja.jpg);
+}
+#construction::before {
+  background-image: url(/assets/Photos/Budowa\ 1.jpg);
+}
+#med::before {
+  background-image: url(/assets/Photos/Sypialnia.jpg);
+}
+.toggle-bar {
+  position: absolute;
+  right: 0;
+  color: black;
+  cursor: pointer;
+  transform: rotate(-90deg);
+  font-size: 2rem;
+  z-index: 1000;
+  text-align: center;
+  transition: 0.5s ease;
+}
+.toggle-bar:hover {
+  color: blue;
+  margin-right: 2rem;
+}
+.toggle-bar:active {
+  outline: none;
+}
+.toggle-bar:focus {
+  outline: none;
+}
+.content {
+  position: absolute;
+  top: 10;
+  right: -100vw;
+  width: 100%;
+  transition: right 0.8s ease;
+  z-index: 10;
+}
+
+.content.show {
+  right: 0vh;
+}
+
+.service-name {
+  font-size: 5rem;
+  opacity: 0.7;
+  padding-left: 5rem;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .service-menu {
+    display: none;
+  }
+}

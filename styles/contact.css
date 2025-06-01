@@ -62,14 +62,13 @@
   box-shadow: 0px 0px 0px;
 }
 .social img {
-  width: 6rem;
+  width: 3em;
 }
 .social p{
   margin-right: 1.5rem;
 }
 
 .info-container {
-  border: 2px solid black;
   width: 85%;
   height: 60%;
   margin-top: 4vh;
@@ -88,4 +87,118 @@
 form {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+}
+form input {
+  width: 50vw;
+  height: 6vh;
+  padding-left: 1.5rem;
+  font-size: 2rem;
+  background-color: rgba(109, 108, 108, 0.4);
+  border: 2px solid black;
+}
+form input::placeholder, textarea::placeholder {
+  color: black;
+}
+
+form input:focus, textarea:focus {
+  outline: none;
+}
+
+form textarea {
+  height: 10vh;
+  font-size: 2rem;
+  background-color: rgba(109, 108, 108, 0.4);
+  border: 2px solid black;
+  padding-left: 1.5rem;
+  resize: none;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+form textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.button {
+  width: 10vw;
+  height: 5vh;
+  border-radius: 30px;
+  border: none;
+  border: 1px solid black;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  background-color: rgba(183, 181, 185, 1);
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgba(119, 166, 210, 1);
+  box-shadow: 0px 0px 20px rgba(26, 126, 240, 1);
+}
+
+.button:active {
+  transform: translateY(3px);
+  box-shadow: 0px 0px 0px;
+}
+
+.slide-in {
+  opacity: 0;
+  transition: all 1s ease-out;
+}
+
+.slide-in[data-direction="up"] {
+  transform: translateY(-150px);
+}
+
+.slide-in.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+      justify-content: start;
+      height: max-content;
+    }
+
+    .links {
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+
+    .social {
+      width: 85%;
+      height: 25vh;
+      justify-content: space-between;
+      padding-left: 1.5rem;
+    }
+    .social > img {
+      width: 2rem;
+    }
+    .info-container {
+      flex-direction: column;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      height: 100vh;
+    }
+
+    form input {
+      width: 80vw;
+      margin-left: 0.5rem;
+      font-size: 1rem;
+    }
+    form textarea {
+      width: 80vw;
+      height: 15vh;
+      font-size: 1rem;
+      margin-left: 0.5rem;
+    }
+    .button {
+      width: 20vw;
+      margin-top: 0.5rem;
+      margin-left: 1.15rem;
+    }
 }
