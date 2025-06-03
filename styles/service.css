@@ -82,8 +82,8 @@ main {
   background-image: url(/assets/Photos/Sypialnia.jpg);
 }
 #office::before {
-  background-image: url(/assets/Photos/Dywan.jpg);
-  background-position: top;
+  background-image: url(/assets/Photos/Biuro_net.jpg);
+  background-position: 100% 70%;
 }
 #factory::before {
   background-image: url(/assets/Photos/produkcja.jpg);
@@ -92,7 +92,7 @@ main {
   background-image: url(/assets/Photos/Budowa\ 1.jpg);
 }
 #med::before {
-  background-image: url(/assets/Photos/Sypialnia.jpg);
+  background-image: url(/assets/Photos/Przychodnia.png);
 }
 .toggle-bar {
   position: absolute;

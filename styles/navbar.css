@@ -14,6 +14,7 @@ a:focus, button:focus, .navbar:focus {
 
 .name {
   font-family: "Italiana", sans-serif;
+  font-size: 3rem;
 }
 
 .navbar {
