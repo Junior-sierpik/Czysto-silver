@@ -142,10 +142,12 @@
     width: 95%;
   }
   .info-container p {
-    font-size: 1rem;
+    font-size: 0.75rem;
+    height: 80%;
   }
   .photo-container {
       margin-top: 1rem;
+      margin-bottom: 2rem;
       width: 90%;
   }
   
@@ -160,7 +162,6 @@
     top: 1vh;
     margin-bottom: 20vh;
     width: 95%;
-    height: 15vh;
   }
   .review-button {
     margin-bottom: 4vh;

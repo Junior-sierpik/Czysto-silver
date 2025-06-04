@@ -429,11 +429,16 @@ input:focus {
   }
 
   .photos-container{
-    width: 100vw;
-
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
+
+  .photo-one, .photo-two {
+    margin-left: 3.25rem;
+  }
+
   .left-side, .right-side {
     width: 100vw;
     background-position: center;
@@ -458,11 +463,14 @@ input:focus {
     font-size: 1rem;
   }
   #content_1, #content_3 {
-    margin-top: 4em;
+    margin-top: 3em;
+    margin-left: 3rem;
   }
   #content_2, #content_4 {
-    margin-bottom: 4em;
+    margin-bottom: 6em;
+    margin-right: 3rem;
   }
+
   .goal-bar {
     margin-top: 85vh;
   }
@@ -474,5 +482,9 @@ input:focus {
 
   .submit button {
     width: 20vw;
+  }
+
+  .photo-container {
+    width: 50%;
   }
 }

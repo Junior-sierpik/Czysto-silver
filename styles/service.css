@@ -68,7 +68,7 @@ main {
   inset: 0;
   background-size: cover;
   background-position: center;
-  opacity: 0.4;
+  opacity: 0.2;
   z-index: -1;
 }
 
@@ -223,11 +223,20 @@ hr {
     display: none;
   }
 
+  .service-name {
+    font-size: 2rem;
+  }
+
+  .toggle-bar {
+    font-size: 1rem;
+  }
+
   .service {
     width: 100%;
   }
 
   .content {
+    right: -130vw;
     width: 80%;
     height: 100%;
     margin-right: 7rem;
@@ -236,6 +245,11 @@ hr {
     align-items: start;
     justify-content: center;
   }
+
+  .content.show {
+    right: -5vw;
+  }
+
   .content p {
     font-size: 1rem;
   }
@@ -246,7 +260,16 @@ hr {
     grid-template-columns: 1fr;
   }
   .add-container {
+    height: 30vh;
     width: 80%;
     margin: auto;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .description {
+    font-size: 1rem;
   }
 }
