@@ -116,7 +116,7 @@ main {
   outline: none;
 }
 .content {
-  font-size: 2rem;
+  font-size: 1.5vw;
   position: absolute;
   top: 10;
   right: -100vw;
@@ -181,7 +181,7 @@ main {
   align-items: center;
   text-align: center;
   text-wrap: wrap;
-  font-size: 1.5rem;
+  font-size: 1vw;
   gap: 2rem;
 }
 

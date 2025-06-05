@@ -26,7 +26,7 @@
   z-index: -1;
 }
 .links {
-  width: 100%;
+  width: 80vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,7 +40,7 @@
   justify-content: space-around;
   align-items: center;
   background-color: rgba(217, 217, 217, 1);
-  font-size: 2rem;
+  font-size: 1.5vw;
   text-decoration: none;
   border: 2px solid black;
   border-radius: 30px;

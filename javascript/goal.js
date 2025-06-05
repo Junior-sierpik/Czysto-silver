@@ -18,8 +18,8 @@
           element.style.opacity = 1;
 
           indeks = (indeks + 1) % goals.length;
-        }, 800);
+        }, 1000);
       }
 
-      setInterval(changeGoal, 3500);
+      setInterval(changeGoal, 7500);
     };
