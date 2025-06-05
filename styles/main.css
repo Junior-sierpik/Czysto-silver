@@ -3,6 +3,10 @@
   scroll-behavior: smooth;
 }
 
+html, body {
+  font-size: 16px;
+}
+
 .bar-container, .bar-container-2{
   margin-top: 10vh;
   padding: 2rem;
@@ -179,11 +183,11 @@
   border-top: 2px solid black;
 }
 
-.left-side{
+.left-side {
   background-image: url(/assets/Photos/Stół1.jpg);
 }
 
-.right-side{
+.right-side {
   border-left: 2px solid black;
   background-image: url(/assets/Photos/Salon2.jpg);
 }

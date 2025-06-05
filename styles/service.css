@@ -116,6 +116,7 @@ main {
   outline: none;
 }
 .content {
+  font-size: 2rem;
   position: absolute;
   top: 10;
   right: -100vw;

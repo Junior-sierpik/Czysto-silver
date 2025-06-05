@@ -26,8 +26,7 @@
   z-index: -1;
 }
 .links {
-  width: 90%;
-  height: 20vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,8 +37,8 @@
   width: 24vw;
   height: 11vh;
   display: flex;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
   background-color: rgba(217, 217, 217, 1);
   font-size: 2rem;
   text-decoration: none;
@@ -62,7 +61,7 @@
   box-shadow: 0px 0px 0px;
 }
 .social img {
-  width: 3em;
+  width: 2.5em;
 }
 .social p{
   margin-right: 1.5rem;
